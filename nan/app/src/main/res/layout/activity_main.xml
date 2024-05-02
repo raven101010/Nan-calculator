@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/stars_bg">
+
+    <ImageButton
+        android:id="@+id/aquariusButton"
+        android:tag="Aquarius"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancerButton"
+        app:srcCompat="@drawable/aquarius" />
+
+    <ImageButton
+        android:id="@+id/sagittariusButton"
+        android:tag="Sagittarius"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/virgoButton"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/leoButton"
+        app:layout_constraintTop_toBottomOf="@+id/container_2"
+        app:srcCompat="@drawable/sagittarius" />
+
+    <ImageButton
+        android:id="@+id/virgoButton"
+        android:tag="Virgo"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_2"
+        app:srcCompat="@drawable/virgo" />
+
+    <ImageButton
+        android:id="@+id/geminiButton"
+        android:tag="Gemini"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leoButton"
+        app:srcCompat="@drawable/gemini" />
+
+    <ImageButton
+        android:id="@+id/libraButton"
+        android:tag="Libra"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/piscesButton"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/geminiButton"
+        app:layout_constraintTop_toBottomOf="@+id/sagittariusButton"
+        app:srcCompat="@drawable/libra" />
+
+    <ImageButton
+        android:id="@+id/piscesButton"
+        android:tag="Pisces"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/virgoButton"
+        app:srcCompat="@drawable/pisces" />
+
+    <ImageButton
+        android:id="@+id/taurusButton"
+        android:tag="Taurus"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geminiButton"
+        app:srcCompat="@drawable/taurus" />
+
+    <ImageButton
+        android:id="@+id/scorpioButton"
+        android:tag="Scorpio"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/cancerButton"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/taurusButton"
+        app:layout_constraintTop_toBottomOf="@+id/libraButton"
+        app:srcCompat="@drawable/scorpio" />
+
+    <ImageButton
+        android:id="@+id/cancerButton"
+        android:tag="Cancer"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/piscesButton"
+        app:srcCompat="@drawable/cancer" />
+
+    <ImageButton
+        android:id="@+id/ariesButton"
+        android:tag="Aries"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taurusButton"
+        app:srcCompat="@drawable/aries" />
+
+    <ImageButton
+        android:id="@+id/capricornButton"
+        android:tag="Capricorn"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/aquariusButton"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/ariesButton"
+        app:layout_constraintTop_toBottomOf="@+id/scorpioButton"
+        app:srcCompat="@drawable/capricorn" />
+
+    <ImageButton
+        android:id="@+id/leoButton"
+        android:tag="Leo"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_1"
+        app:srcCompat="@drawable/leo" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="660dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/container_2"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toEndOf="@+id/add"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/emptybox"
+        android:tag="Temporary"/>
+
+    <ImageView
+        android:id="@+id/container_1"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/add"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/emptybox"
+        android:tag="Temporary"/>
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="34dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        app:srcCompat="@drawable/add" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#D5D5D5"
+        android:text="Confrim"
+        android:textColor="#000000"
+        android:textColorLink="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
